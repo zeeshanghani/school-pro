@@ -11,7 +11,7 @@ export default function SiteFooter() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Logo variant="dark"/>
+              <Logo />
             </div>
             <p className="text-sm text-white/90">
             From admissions to academics, simplify every aspect of school administration with our comprehensive and user-friendly platform.
