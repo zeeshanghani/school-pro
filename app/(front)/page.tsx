@@ -1,20 +1,21 @@
-import { DashboardPreview } from '@/components/frontend/dashboard-preview'
-import GridFeatures from '@/components/frontend/grid-features'
-import HeroSection from '@/components/frontend/hero-section'
-import LogoCloud from '@/components/frontend/logo-cloud'
-import Pricing from '@/components/frontend/pricing'
-import TabbedFeatures from '@/components/frontend/tabbed-features'
-import React from 'react'
+// import React from 'react';
+
+import { DashboardPreview } from "@/components/ftrontend/dashboard-preview";
+import GridFeatures from "@/components/ftrontend/grid-features";
+import HeroSection from "@/components/ftrontend/herosection";
+import LogoCloud from "@/components/ftrontend/logo-cloud";
+import Pricing from "@/components/ftrontend/pricing";
+import TabbedFeatures from "@/components/ftrontend/tabbed-features";
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection/>
-      <LogoCloud/>
+    <div>
+      <HeroSection />
+      <LogoCloud />
       <DashboardPreview/>
-      <GridFeatures/>
-      <TabbedFeatures/>
+      <GridFeatures />
+      <TabbedFeatures />
       <Pricing />
-    </main>
-  )
+    </div>
+  );
 }

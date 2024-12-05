@@ -1,9 +1,11 @@
-import React from 'react'
+// import React from 'react'
+
+import Login from "@/components/ftrontend/auth/login";
 
 export default function page() {
   return (
     <div>
-      <h2>Login Page</h2>
+      <Login />
     </div>
   )
 }

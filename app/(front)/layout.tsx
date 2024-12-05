@@ -1,13 +1,14 @@
-import SiteFooter from '@/components/frontend/site-footer'
+import SiteFooter from '@/components/ftrontend/site-footer'
 import SiteHeader from '@/components/site-header'
-import React , { ReactNode } from 'react'
+// import React from 'react'
+import react, {ReactNode} from 'react'
 
 export default function FrontLayout({children}:{children:ReactNode}) {
   return (
-    <div>
-      <SiteHeader />
-      {children}
-      <SiteFooter/>
-    </div>
+      <div>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+        </div>
   )
 }
