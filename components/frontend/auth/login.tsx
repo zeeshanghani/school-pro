@@ -7,6 +7,7 @@ import TextInput from "@/components/FormInputs/TextInput";
 import SubmitButton from "@/components/FormInputs/SubmitButton";
 import CustomCarousel from "../custom-carousel";
 import Logo from "@/components/logo";
+import { LogIn, Mail } from "lucide-react";
 export type RegisterInputProps = {
   fullName: string;
   email: string;
@@ -42,6 +43,7 @@ export default function Login() {
               type="email"
               errors={errors}
               placeholder="Eg. johndoe@gmail.com"
+              icon={Mail}
             />
             <TextInput
               label="Password"
@@ -53,6 +55,7 @@ export default function Login() {
             />
 
             <SubmitButton
+             buttonIcon={LogIn}
               title="Signin"
               loading={isLoading}
               loadingTitle="Singning in please wait..."

@@ -41,6 +41,7 @@ import {
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
 import Logo from "./logo";
+import PromoBanner from "./promoBanner";
 
 const features = [
     {
@@ -135,12 +136,11 @@ export default function SiteHeader() {
   const [showFeatures, setShowFeatures] = React.useState(false);
 
   return (
-    <div className="fixed bg-background top-0 left-0 right-0 z-50">
-      
+    <div className="sticky bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 top-0 left-0 right-0 z-50">
+      <PromoBanner />      
         <div className="container max-w-6xl mx-auto flex h-14 items-center justify-between">
           <div className="flex items-center space-x-4">
             <Logo />
-
             <NavigationMenu className="hidden md:flex">
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -150,7 +150,6 @@ export default function SiteHeader() {
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Features</NavigationMenuTrigger>
                   <NavigationMenuContent>

@@ -407,3 +407,6 @@ https://schoolmonitor.net/
 pnpm dlx shadcn@latest add (dependancy name)
 pnpm dlx shadcn@latest add card input label select
 pnpm dlx shadcn@latest add avatar dropdown-menu table sidebar collapsible
+
+pnpm add @tanstack/react-table
+pnpm dlx shadcn@latest  add scroll-area
