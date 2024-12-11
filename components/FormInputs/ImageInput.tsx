@@ -8,7 +8,8 @@ type ImageInputProps = {
   imageUrl: string;
   setImageUrl: any;
   endpoint: any;
-  className?:string
+  className?:string;
+  size?:"sm"|"md"|"lg"
 };
 export default function ImageInput({
   title,
@@ -16,6 +17,7 @@ export default function ImageInput({
   setImageUrl,
   endpoint,
   className,
+  size="lg"
 }: ImageInputProps) {
   return (
     <Card className="overflow-hidden">
