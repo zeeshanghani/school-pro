@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div>
       <h2>Scho0l Onboarding Page</h2>
-      <div className = " max-w-5xl mx-auto p-16 w-full my-5">
+      <div className = " max-w-4xl mx-auto p-10 w-full my-5">
       <Card className='border-t-4 border-blue-600 shdow'>
         <CardContent className='p-6'>
         <SchoolOnboardingForm/>
